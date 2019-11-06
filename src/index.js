@@ -4,7 +4,7 @@
 // Named Import: must be "statically analyzable" (compiler can look and see that it is deterministic)
 //    Meaning, we can't do anything variable or conditional around import/export.
 // The default export allows you to get something easy from the other files, but you CAN name it funky.
-import banana from "./math"; // banana === add, but that's BAD PRACTICE.
+import { add as banana } from "./math"; // banana === add, but that's BAD PRACTICE.
 
 const sam = {
   name: "Sam",
